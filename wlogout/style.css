@@ -15,8 +15,8 @@ button {
     color: #FFFFFF;
 	background-color: rgba(0, 0, 0, 0.65);
 	border-style: solid;
-	border-color: #FFFFFF;
-	border-width: 0px;
+	border-color: rgba(0, 0, 0, 0);
+	border-width: 4px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 30%;
@@ -26,7 +26,7 @@ button {
 button:focus, button:active, button:hover {
 	background-color: rgba(0, 0, 0, 0.65);
 	outline-style: none;
-	border-color: rgba(214, 214, 214, 0.65);
+	border-color: #D6D6D6;
 	border-width: 4px;
 }
 
