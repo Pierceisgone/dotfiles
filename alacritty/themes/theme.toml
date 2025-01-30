@@ -1,6 +1,6 @@
 # Default colors
 [colors.primary]
-background = '#000000'
+background = '#111111' ##000000
 foreground = '#d6d6d6'
 #dim_foreground    = '#dbdbdb'
 #bright_foreground = '#d9d9d9'
@@ -12,7 +12,7 @@ foreground = '#d6d6d6'
 
 # Normal colors
 [colors.normal]
-black   = '#101010'
+black   = '#111111' ##101010
 red     = '#ff5454'
 green   = '#6eff66'
 yellow  = '#ffff6b'
@@ -23,7 +23,7 @@ white   = '#cacaca'
 
 # Bright colors
 [colors.bright]
-black   = '#282828'
+black   = '#111111' ##282828
 red     = '#e34949'
 green   = '#60e05a'
 yellow  = '#dede5d'
@@ -34,7 +34,7 @@ white   = '#f7f7f7'
 
 # Dim colors
 [colors.dim]
-black   = '#232323'
+black   = '#111111' ##232323
 red     = '#74423f'
 green   = '#5e6547'
 yellow  = '#c3d900'
