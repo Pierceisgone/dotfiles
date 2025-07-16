@@ -1,4 +1,7 @@
 # Lines configured by zsh-newuser-install
+export EDITOR=nvim
+export VISUAL=nvim
+alias vim=nvim
 HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
@@ -25,24 +28,14 @@ PROMPT="%F{cyan}[%F{magenta}%n%F{cyan}@%F{magenta}%M %1~%F{cyan}]%F{magenta}$%f 
 # End of lines configured by zsh-newuser-install
 fastfetch --color magenta --logo-color-1 magenta --logo-color-2 magenta
 
-file() { lf; }
-zle -N file
-bindkey "^f" file
-
-home() { cd "/home/pierce"; }
-zle -N home
-bindkey "^h" home
-
-editor() { nvim; }
-zle -N editor
-bindkey "^v" editor
+fuzzydir() { cd $(find / 2>&1 | grep -v 'Permission denied' | fzf --exact); zle reset-prompt}
+zle -N fuzzydir
+bindkey "^f" fuzzydir
 
 toggle() { fg; }
 zle -N toggle
 bindkey "^z" toggle
 
-gtp() { source ~/gtp.sh }
-zle -N gtp
-bindkey "^g" gtp
-
-
+fuzzyman() { source ~/scripts/fuzzyman.sh }
+zle -N fuzzyman
+bindkey "^g" fuzzyman
