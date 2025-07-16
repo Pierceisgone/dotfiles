@@ -7,7 +7,8 @@ term = "xterm-256color"
 [general]
 import = [
 	"~/.config/alacritty/themes/theme.toml"
+]
 [font]
 size = 10.50
-]
+
 
